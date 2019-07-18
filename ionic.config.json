@@ -1,0 +1,7 @@
+{
+  "name": "expensed",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
