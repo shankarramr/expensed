@@ -1,0 +1,20 @@
+.theme-light {
+
+  --bColor: var(--ion-color-light);
+  --fColor: var(--ion-color-dark);
+
+  ion-toolbar {
+    --background: var(--bColor);
+    --color: var(--fColor);
+  }
+
+  ion-content {
+    --background: var(--bColor);
+  }
+
+  ion-item {
+    --background: var(--bColor);
+    --color: var(--fColor);
+  }
+  
+}

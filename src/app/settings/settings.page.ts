@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeService } from '../shared/theme.service';
 
 @Component({
   selector: 'app-settings',
@@ -7,16 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsPage implements OnInit {
 
-  constructor() { }
+  constructor(private themeService: ThemeService) { }
 
   ngOnInit() {
   }
 
   onNightModeToggle(nightModeToggle: boolean) {
     if (nightModeToggle) {
-
+      this.themeService.enableDarkMode();
     } else {
-      
+      this.themeService.enableLightMode();
     }
   }
 

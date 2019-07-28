@@ -1,6 +1,11 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+
+/** Light and Dark theme **/
+@import "theme.light";
+@import "theme.dark";
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -74,4 +79,5 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
 }
