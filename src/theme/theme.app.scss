@@ -1,0 +1,39 @@
+%theme-app {
+
+  ion-content {
+    --background: var(--bColor);
+  }
+  
+  ion-list {
+    background: var(--bColor);
+  }
+  
+  ion-toolbar {
+    --background: var(--bColor);
+    --color: var(--fColor);
+  }
+
+  ion-item {
+    --background: var(--bColor);
+    --color: var(--fColor);
+  }
+
+}
+
+.theme-dark {
+
+  --bColor: var(--ion-color-dark);
+  --fColor: var(--ion-color-light);
+
+  @extend %theme-app;
+
+}
+
+.theme-light {
+
+  --bColor: var(--ion-color-light);
+  --fColor: var(--ion-color-dark);
+
+  @extend %theme-app;
+
+}

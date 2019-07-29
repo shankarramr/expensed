@@ -2,9 +2,8 @@
 // http://ionicframework.com/docs/theming/
 
 
-/** Light and Dark theme **/
-@import "theme.light";
-@import "theme.dark";
+/** Custom app theme **/
+@import "theme.app.scss";
 
 /** Ionic CSS Variables **/
 :root {

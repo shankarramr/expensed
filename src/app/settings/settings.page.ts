@@ -7,18 +7,31 @@ import { ThemeService } from '../shared/theme.service';
   styleUrls: ['./settings.page.scss'],
 })
 export class SettingsPage implements OnInit {
+  private _nightModeToggleValue: boolean;
 
-  constructor(private themeService: ThemeService) { }
-
-  ngOnInit() {
+  constructor(private themeService: ThemeService) {
+    this.nightModeToggleValue = this.themeService.stateNightModeToggle;
   }
 
-  onNightModeToggle(nightModeToggle: boolean) {
-    if (nightModeToggle) {
+  onNightModeToggle(nightModeToggleInputValue: boolean) {
+    this.themeService.stateNightModeToggle = nightModeToggleInputValue;
+
+    if (nightModeToggleInputValue) {
       this.themeService.enableDarkMode();
     } else {
       this.themeService.enableLightMode();
     }
+  }
+
+  get nightModeToggleValue(): boolean {
+    return this._nightModeToggleValue;
+  }
+
+  set nightModeToggleValue(stateNightModeToggle: boolean) {
+    this._nightModeToggleValue = stateNightModeToggle;
+  }
+
+  ngOnInit() {
   }
 
 }
