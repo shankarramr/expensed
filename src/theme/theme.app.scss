@@ -3,6 +3,7 @@
   --bColor: '';
   --fColor: '';
   --iconColor: '';
+  --itemBackgroundHover: '';
 
   ion-content {
     --background: var(--bColor);
@@ -20,6 +21,7 @@
   ion-item {
     --background: var(--bColor);
     --color: var(--fColor);
+    --background-hover: var(--itemBackgroundHover);
   }
 
   ion-icon {
@@ -33,6 +35,7 @@
   --bColor: var(--ion-color-dark);
   --fColor: var(--ion-color-light);
   --iconColor: var(--ion-color-primary);
+  --itemBackgroundHover: var(--ion-color-dark-tint);
 
   @extend %theme-app;
 
@@ -43,6 +46,7 @@
   --bColor: var(--ion-color-light);
   --fColor: var(--ion-color-dark);
   --iconColor: var(--ion-color-dark);
+  --itemBackgroundHover: rgb(216, 216, 216);
 
   @extend %theme-app;
 
